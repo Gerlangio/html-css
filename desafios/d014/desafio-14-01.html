@@ -12,13 +12,16 @@
 
         table {
             border-collapse: collapse;
-            background-color: gray;
         }
 
-        th, td {
+        td, td {
+            border: 1px solid rgb(17, 17, 17);
+            padding: 10px;  
+        }
+
+        th {
             border: 1px solid rgb(17, 17, 17);
             padding: 10px;
-            color: white;
         }
     </style>
 </head>
@@ -34,11 +37,56 @@
                 <th>Nota 2</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Extras</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <!--1ª Metade-->
+            <tr>
+                <th colspan="4">Média de Extras</th>
+                <td>0.0</td>
+            </tr>
+            <!--Rótulo do Meio-->
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
     </table>
-    <tbody>
-        <tr>
-            <th>Extras</th>
-        </tr>
-    </tbody>
 </body>
 </html>
