@@ -25,12 +25,38 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        /**tr.destaque {
+            background-color: chartreuse;
+        }*/
+        col.cnome {
+            background-color: chartreuse;
+        }
+        /*Para extender a mesma cor para a coluna vizinha basta adicionar col.cidade*/
+        /*col.csexo, col.cidade {
+            background-color: yellow;
+        }*/
+        col.cgrupo {
+            background-color: brown;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
 
     <table>
+        <!--Criando uma tag para selecionar uma coluna ou mais-->
+        <colgroup>
+            
+            <!--Fazendo de outra forma-->
+            <!--
+            <col class="cnome">
+            <!--<col class="csexo">-->
+            <col class="cidade">-->
+            <col class="cgrupo" span="3">
+            <!--<col class="cprof">-->
+        </colgroup>
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">Sexo</th>
@@ -49,6 +75,8 @@
             <td>28</td>
             <td>Programador</td>
         </tr>
+        <!--Colocando destaque numa linha-->
+        <!--<tr class="destaque">-->
         <tr>
             <td>Gustavo</td>
             <td>M</td>
